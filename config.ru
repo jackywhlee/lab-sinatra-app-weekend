@@ -2,10 +2,11 @@ require 'rubygems'
 require 'bundler'
 Bundler.require
 
-# Models
+
+require './app'
+
 require './models/tvshow'
 
-# Controllers
-require './app'
+require './controllers/tvshows_controller'
 
 run TvshowsApp

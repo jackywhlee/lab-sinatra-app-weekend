@@ -1,0 +1,20 @@
+<h2>New TV Show</h2>
+
+<form class="form-tv" id="add-tvshow" method="POST" action ="/backlog">
+
+  <div class="form-group">
+    <label for="tvshow_title">Title:</label>
+    <input class="form-control" type="text" name="backlog[title]" id="tvshow_title">
+  </div>
+
+  <div class="form-group">
+    <label for="tvshow_status">Status:</label>
+    <input class="form-control" type="text" name="backlog[status]" id="tvshow_status">
+  </div>
+
+  <div class="form-group">
+    <label for="tvshow_priority">Priority:</label>
+    <input class="form-control" type="number" name="backlog[priority]" id="tvshow_priority">
+  </div>
+  <button class="btn btn-primary" type="submit">Add TV Show</button>
+</form>

@@ -1,0 +1,19 @@
+<h2>Backlog List</h2>
+
+<ul class="backlogs">
+  <% @backlogs.each do |backlog| %>
+    <li>
+      <strong>
+        <a href="/backlog/<%= backlog.id %>"><%= backlog.title %></a>
+      </strong>
+      <a href="/backlog/<%= backlog.id %>/edit">Edit</a>
+      <form action="/backlog/<%= backlog.id %>" method="post">
+      <input type="submit" value="Delete TVShow">
+      <a href="#">Delete TV Show</a>
+      </form>
+    </li>
+  <% end %>
+</ul>
+
+
+<a class="btn" href="/backlog/new">Add Backlog</a>
